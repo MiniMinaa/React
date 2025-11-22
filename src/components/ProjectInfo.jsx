@@ -7,7 +7,7 @@ function ProjectInfo(props) {
             <img className="img" src={props.img} alt="My project" />
             <h1 className="header">{props.name}</h1>
             <p className="summary">{props.summary}</p>
-            <ul className="list">{props.list}</ul>
+            <p className="tech">{props.tech}</p>
             <a className="link" href={props.link}>Link to my GitHub repository</a>
         </div>
     )
