@@ -1,6 +1,40 @@
+body {
+    background-image: url('/src/assets/flower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 .projects {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.portfolioButton {
+    background:#b1d1e85b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 25px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.portfolioButton:hover {
+    background:#b1d1e8c0;
+    color: #ffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(209, 177, 216, 0.5);
+}
+.button-container {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    padding-top: 20%;
+    padding-right: 20%;
 }

@@ -11,7 +11,9 @@ function Portfolio() {
     return (
         <>
             {!showProjects && (
-                <button onClick={() => setShowProjects(true)}>View my projects!</button> 
+                <div className="button-container">
+                    <button className="portfolioButton" onClick={() => setShowProjects(true)}>View my projects!</button> 
+                </div>
             )}
             {showProjects && (
                 <div className="projects"> 
