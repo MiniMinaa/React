@@ -1,3 +1,5 @@
+import "./pages.css"
+
 function About(){
     return (
         <div>
