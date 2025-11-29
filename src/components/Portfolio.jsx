@@ -25,7 +25,7 @@ function Portfolio() {
             img: flexboxSS,
         }
     ]
-    
+
     const popupDataText = [
        {
             name: "Form",
@@ -47,7 +47,7 @@ function Portfolio() {
             link: "https://github.com/MiniMinaa/",
             tech: "HTML, CSS",
             summary: "I built a website using Flexbox, carefully arranging elements to create a clean and consistent layout. I focused on alignment, spacing, and flexible sizing to ensure the design adapts smoothly to different screen sizes. Throughout the project, I solved layout challenges, refined component positioning, and ensured the interface works well across devices, enhancing both usability and visual consistency."
-        } 
+        }
     ]
 
     return (
@@ -56,7 +56,7 @@ function Portfolio() {
                 <div className="search-container">
                     <input className="searchbar"
                         type="text"
-                        placeholder="Search tag..."
+                        placeholder="Search project..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
@@ -64,8 +64,8 @@ function Portfolio() {
             )}
             {showProjects && (
                 <div className="projects">
-                    {projects.filter((project) => (project.name.includes(search)))
-                    
+                    {projects.filter((project) => (project.name.toLowerCase().includes(search)))
+
                     .map((project, index) => (
                         <ProjectInfo
                             key={project.name}
@@ -82,7 +82,7 @@ function Portfolio() {
             )}
             {!showProjects && (
                 <div className="button-container">
-                    <button className="portfolioButton" onClick={() => setShowProjects(true)}>View my projects!</button> 
+                    <button className="portfolioButton" onClick={() => setShowProjects(true)}>View my projects!</button>
                 </div>
             )}
             {popup && (
